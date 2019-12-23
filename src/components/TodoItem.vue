@@ -27,19 +27,22 @@ export default {
 <style scoped>
   .todo-item {
     background: #27ae60;
-    padding: 10px;
+    padding: 0.2rem;
     border-bottom: 0.3rem #12181f solid;
   }
   .is-complete {
     text-decoration: line-through;
   }
   .del {
-    background: #851f1f;
+    background: #ff1744;
     color: #fff;
     border: none;
     padding: 5px 9px;
     border-radius: 0%;
     cursor: pointer;
     float: right;
+  }
+  .del:hover {
+    background: rgb(161, 32, 32);
   }
 </style>
