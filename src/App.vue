@@ -19,15 +19,13 @@ export default {
   components: {
     TodoHeader,
     Todos,
-    AddTodo
+    AddTodo,
   },
   //This is where data is stored
   data() {
     return {
       //"todos" is an array of objects, gets data from addTodo() method
-      todos: [
-        {id: 1, title: "asd", completed: false}
-      ]
+      todos: []
     }
   },
   methods: {
