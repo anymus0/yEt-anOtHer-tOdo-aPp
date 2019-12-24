@@ -1,11 +1,9 @@
 <template>
   <!-- bind a class if the "completed" key's value is true -->
-  <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
-      <p>
+  <div class="todo-item">
+      <p v-bind:class="{'is-complete':todo.completed}">
         <input type="checkbox" v-on:change="markComplete">
-        <button @click="$emit('del-todo', todo.id)" class="del">
-          <i class="fas fa-ban"></i>
-        </button>
+        <button @click="$emit('del-todo', todo.id)" class="del">x</button>
         {{todo.title}}
       </p>
       
@@ -26,28 +24,6 @@ export default {
 </script>
 
 
-<style scoped>
-  .todo-item {
-    background: #27ae60;
-    padding: 0.2rem;
-    border-bottom: 0.3rem #12181f solid;
-  }
-  .todo-item p {
-    margin: 1rem;
-  }
-  .is-complete {
-    text-decoration: line-through;
-  }
-  .del {
-    background: #ff1744;
-    color: #fff;
-    border: none;
-    padding: 0.4%;
-    border-radius: 30%;
-    cursor: pointer;
-    float: right;
-  }
-  .del:hover {
-    background: rgb(161, 32, 32);
-  }
+<style lang="scss" scoped>
+  @import './../assets/scss/components/_TodoItem.scss';
 </style>

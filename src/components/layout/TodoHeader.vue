@@ -11,11 +11,6 @@ export default {
 </script>
 
 
-<style scoped>
-  .header {
-    background: rgb(51, 51, 51);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
+<style lang="scss" scoped>
+  @import './../../assets/scss/components/layout/_TodoHeader.scss';
 </style>

@@ -1,0 +1,28 @@
+@import './../custome-variables';
+
+.todo-item {
+  background: #00E676;
+  padding: 0.2rem;
+  border-bottom: 0.3rem #12181f solid;
+  width: 50%;
+  margin-left: 25%;
+}
+.todo-item p {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+.is-complete {
+  text-decoration: line-through;
+}
+.del {
+  background: #ff1744;
+  color: #fff;
+  border: none;
+  padding: 0.4%;
+  border-radius: 30%;
+  cursor: pointer;
+  float: right;
+}
+.del:hover {
+  background: rgb(161, 32, 32);
+}

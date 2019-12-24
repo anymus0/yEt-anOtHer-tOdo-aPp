@@ -1,19 +1,22 @@
 <template>
   <div class="wrapper">
     <FlashMessage></FlashMessage>
-    <form @submit="InputValidation">
-      <input id="title" type="text" name="title" placeholder="Add Todo..." v-model="title">
-      <button type="submit" name="Submit" class="btn">Send Todo</button>
-    </form>
+    <b-form @submit="InputValidation">
+      <b-form-input 
+        id="title" 
+        type="text" 
+        name="title" 
+        placeholder="Add Todo..." 
+        v-model="title">
+      </b-form-input>
+      <b-button variant="success" type="submit" name="Submit" class="btn">Send Todo</b-button>
+    </b-form>
   </div>
 </template>
 
 
 <script>
 import uuid from 'uuid'
-import Vue from 'vue';
-import FlashMessage from '@smartweb/vue-flash-message';
-Vue.use(FlashMessage);
 
 export default {
   name: "AddTodo",
@@ -62,21 +65,6 @@ export default {
 </script>
 
 
-<style scoped>
-  .wrapper {
-    padding: 2%;
-  }
-
-  form {
-    display: flex;
-  }
-
-  input[type="text"] {
-    flex: 10;
-    padding: 5px;
-  }
-
-  input[type="submit"] {
-    flex: 2;
-  }
+<style lang="scss" scoped>
+  @import './../assets/scss/components/_AddTodo.scss';
 </style>

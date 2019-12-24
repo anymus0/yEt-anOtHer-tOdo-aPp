@@ -1,0 +1,16 @@
+@import './../custome-variables';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  background-color: #212121;
+}
+.btn {
+  margin-left: 2%;
+}

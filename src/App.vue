@@ -40,24 +40,6 @@ export default {
 }
 </script>
 
-<style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
-    background-color: #2c3e50;
-  }
-
-  .btn {
-    background-color: #00C853;
-    margin-left: 2%;
-  }
-  .btn:hover {
-    background-color: rgb(33, 126, 72);
-  }
+<style lang="scss">
+  @import './assets/scss/components/_App.scss';
 </style>
